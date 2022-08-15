@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		719D0DC328AA7F37005A2B4D /* RandomWordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DC228AA7F37005A2B4D /* RandomWordService.swift */; };
+		719D0DC928AA8556005A2B4D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DC828AA8556005A2B4D /* Resource.swift */; };
+		719D0DCD28AA88F2005A2B4D /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DCC28AA88F2005A2B4D /* PublisherExtension.swift */; };
 		71A8117028AA60CF004A351D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8116F28AA60CF004A351D /* AppDelegate.swift */; };
 		71A8117228AA60CF004A351D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8117128AA60CF004A351D /* SceneDelegate.swift */; };
 		71A8117428AA60CF004A351D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8117328AA60CF004A351D /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		719D0DC228AA7F37005A2B4D /* RandomWordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordService.swift; sourceTree = "<group>"; };
+		719D0DC828AA8556005A2B4D /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		719D0DCC28AA88F2005A2B4D /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
 		71A8116C28AA60CF004A351D /* RandomWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A8116F28AA60CF004A351D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A8117128AA60CF004A351D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		719D0DBE28AA7E91005A2B4D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				71A8116F28AA60CF004A351D /* AppDelegate.swift */,
+				71A8117128AA60CF004A351D /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		719D0DC028AA7EA3005A2B4D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				71A8117328AA60CF004A351D /* ViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		719D0DC128AA7EE5005A2B4D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				719D0DC228AA7F37005A2B4D /* RandomWordService.swift */,
+				719D0DC828AA8556005A2B4D /* Resource.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		719D0DCA28AA88BF005A2B4D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				719D0DCB28AA88D2005A2B4D /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		719D0DCB28AA88D2005A2B4D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				719D0DCC28AA88F2005A2B4D /* PublisherExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		71A8116328AA60CF004A351D = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +104,13 @@
 		71A8116E28AA60CF004A351D /* RandomWords */ = {
 			isa = PBXGroup;
 			children = (
-				71A8116F28AA60CF004A351D /* AppDelegate.swift */,
-				71A8117128AA60CF004A351D /* SceneDelegate.swift */,
-				71A8117328AA60CF004A351D /* ViewController.swift */,
 				71A8117528AA60CF004A351D /* Main.storyboard */,
-				71A8117828AA60D1004A351D /* Assets.xcassets */,
 				71A8117A28AA60D1004A351D /* LaunchScreen.storyboard */,
+				719D0DBE28AA7E91005A2B4D /* Delegate */,
+				719D0DC028AA7EA3005A2B4D /* UI */,
+				719D0DCA28AA88BF005A2B4D /* Helper */,
+				719D0DC128AA7EE5005A2B4D /* Network */,
+				71A8117828AA60D1004A351D /* Assets.xcassets */,
 				71A8117D28AA60D1004A351D /* Info.plist */,
 			);
 			path = RandomWords;
@@ -138,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719D0DC328AA7F37005A2B4D /* RandomWordService.swift in Sources */,
 				71A8117428AA60CF004A351D /* ViewController.swift in Sources */,
 				71A8117028AA60CF004A351D /* AppDelegate.swift in Sources */,
+				719D0DC928AA8556005A2B4D /* Resource.swift in Sources */,
+				719D0DCD28AA88F2005A2B4D /* PublisherExtension.swift in Sources */,
 				71A8117228AA60CF004A351D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

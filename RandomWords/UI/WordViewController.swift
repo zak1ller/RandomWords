@@ -26,8 +26,6 @@ class WordViewController: UIViewController {
   }
   
   lazy var randomWordLabel = UILabel().then {
-    $0.isUserInteractionEnabled = true
-    $0.text = "dummy data"
     $0.textColor = .white
     $0.font = .systemFont(ofSize: 25, weight: .heavy)
     $0.textAlignment = .center

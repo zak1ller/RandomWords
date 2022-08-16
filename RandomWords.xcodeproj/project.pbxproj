@@ -15,6 +15,11 @@
 		719D0DD628AAA847005A2B4D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 719D0DD528AAA847005A2B4D /* Alamofire */; };
 		719D0DD828AAA99B005A2B4D /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DD728AAA99B005A2B4D /* WordViewController.swift */; };
 		719D0DDB28AAACA1005A2B4D /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DDA28AAACA1005A2B4D /* WordViewModel.swift */; };
+		719D0DDE28AB5ADE005A2B4D /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DDD28AB5ADE005A2B4D /* MainButton.swift */; };
+		719D0DE028AB5D02005A2B4D /* AllWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DDF28AB5D02005A2B4D /* AllWordsViewController.swift */; };
+		719D0DE228AB5D2F005A2B4D /* AllWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DE128AB5D2F005A2B4D /* AllWordsViewModel.swift */; };
+		719D0DE628AB8EEC005A2B4D /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DE528AB8EEC005A2B4D /* WordCell.swift */; };
+		719D0DE928AB931F005A2B4D /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 719D0DE828AB931F005A2B4D /* NVActivityIndicatorView */; };
 		71A8117028AA60CF004A351D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8116F28AA60CF004A351D /* AppDelegate.swift */; };
 		71A8117228AA60CF004A351D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8117128AA60CF004A351D /* SceneDelegate.swift */; };
 		71A8117428AA60CF004A351D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8117328AA60CF004A351D /* HomeViewController.swift */; };
@@ -29,6 +34,10 @@
 		719D0DCC28AA88F2005A2B4D /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
 		719D0DD728AAA99B005A2B4D /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 		719D0DDA28AAACA1005A2B4D /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
+		719D0DDD28AB5ADE005A2B4D /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		719D0DDF28AB5D02005A2B4D /* AllWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsViewController.swift; sourceTree = "<group>"; };
+		719D0DE128AB5D2F005A2B4D /* AllWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsViewModel.swift; sourceTree = "<group>"; };
+		719D0DE528AB8EEC005A2B4D /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		71A8116C28AA60CF004A351D /* RandomWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A8116F28AA60CF004A351D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A8117128AA60CF004A351D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719D0DE928AB931F005A2B4D /* NVActivityIndicatorView in Frameworks */,
 				719D0DD628AAA847005A2B4D /* Alamofire in Frameworks */,
 				719D0DD028AA8DA8005A2B4D /* Then in Frameworks */,
 				719D0DD328AA8EB3005A2B4D /* SnapKit in Frameworks */,
@@ -58,6 +68,8 @@
 			children = (
 				71A8117328AA60CF004A351D /* HomeViewController.swift */,
 				719D0DD728AAA99B005A2B4D /* WordViewController.swift */,
+				719D0DDF28AB5D02005A2B4D /* AllWordsViewController.swift */,
+				719D0DE528AB8EEC005A2B4D /* WordCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -75,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				719D0DD928AAAC86005A2B4D /* ViewModel */,
+				719D0DDC28AB5AC5005A2B4D /* CustomView */,
 				719D0DC128AA7EE5005A2B4D /* Network */,
 				719D0DCB28AA88D2005A2B4D /* Extension */,
 			);
@@ -93,8 +106,17 @@
 			isa = PBXGroup;
 			children = (
 				719D0DDA28AAACA1005A2B4D /* WordViewModel.swift */,
+				719D0DE128AB5D2F005A2B4D /* AllWordsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		719D0DDC28AB5AC5005A2B4D /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				719D0DDD28AB5ADE005A2B4D /* MainButton.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		71A8116328AA60CF004A351D = {
@@ -148,6 +170,7 @@
 				719D0DCF28AA8DA8005A2B4D /* Then */,
 				719D0DD228AA8EB3005A2B4D /* SnapKit */,
 				719D0DD528AAA847005A2B4D /* Alamofire */,
+				719D0DE828AB931F005A2B4D /* NVActivityIndicatorView */,
 			);
 			productName = RandomWords;
 			productReference = 71A8116C28AA60CF004A351D /* RandomWords.app */;
@@ -181,6 +204,7 @@
 				719D0DCE28AA8DA8005A2B4D /* XCRemoteSwiftPackageReference "Then" */,
 				719D0DD128AA8EB3005A2B4D /* XCRemoteSwiftPackageReference "SnapKit" */,
 				719D0DD428AAA847005A2B4D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				719D0DE728AB931F005A2B4D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = 71A8116D28AA60CF004A351D /* Products */;
 			projectDirPath = "";
@@ -209,12 +233,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719D0DE228AB5D2F005A2B4D /* AllWordsViewModel.swift in Sources */,
 				719D0DC328AA7F37005A2B4D /* RandomWordService.swift in Sources */,
 				71A8117428AA60CF004A351D /* HomeViewController.swift in Sources */,
+				719D0DE028AB5D02005A2B4D /* AllWordsViewController.swift in Sources */,
+				719D0DDE28AB5ADE005A2B4D /* MainButton.swift in Sources */,
 				719D0DD828AAA99B005A2B4D /* WordViewController.swift in Sources */,
 				71A8117028AA60CF004A351D /* AppDelegate.swift in Sources */,
 				719D0DC928AA8556005A2B4D /* Resource.swift in Sources */,
 				719D0DCD28AA88F2005A2B4D /* PublisherExtension.swift in Sources */,
+				719D0DE628AB8EEC005A2B4D /* WordCell.swift in Sources */,
 				719D0DDB28AAACA1005A2B4D /* WordViewModel.swift in Sources */,
 				71A8117228AA60CF004A351D /* SceneDelegate.swift in Sources */,
 			);
@@ -460,6 +488,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		719D0DE728AB931F005A2B4D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -477,6 +513,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 719D0DD428AAA847005A2B4D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		719D0DE828AB931F005A2B4D /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719D0DE728AB931F005A2B4D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -15,18 +15,14 @@ class HomeViewController: UIViewController {
     $0.spacing = 16
   }
   
-  lazy var allWordsButton = UIButton(type: .system).then {
+  lazy var allWordsButton = MainButton(type: .system).then {
     $0.addTarget(self, action: #selector(allWordsTapped), for: .touchUpInside)
     $0.setTitle("All Words", for: .normal)
-    $0.setTitleColor(.white, for: .normal)
-    $0.backgroundColor = .darkGray
   }
   
-  lazy var wordButton = UIButton(type: .system).then {
+  lazy var wordButton = MainButton(type: .system).then {
     $0.addTarget(self, action: #selector(wordTapped), for: .touchUpInside)
     $0.setTitle("Word", for: .normal)
-    $0.setTitleColor(.white, for: .normal)
-    $0.backgroundColor = .darkGray
   }
   
   override func viewDidLoad() {
@@ -61,7 +57,9 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController {
   @objc func allWordsTapped() {
-    
+    let vc = AllWordsViewController()
+    vc.modalPresentationStyle = .formSheet
+    self.present(vc, animated: true)
   }
   
   @objc func wordTapped() {

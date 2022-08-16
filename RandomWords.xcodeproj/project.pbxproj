@@ -10,9 +10,14 @@
 		719D0DC328AA7F37005A2B4D /* RandomWordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DC228AA7F37005A2B4D /* RandomWordService.swift */; };
 		719D0DC928AA8556005A2B4D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DC828AA8556005A2B4D /* Resource.swift */; };
 		719D0DCD28AA88F2005A2B4D /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DCC28AA88F2005A2B4D /* PublisherExtension.swift */; };
+		719D0DD028AA8DA8005A2B4D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 719D0DCF28AA8DA8005A2B4D /* Then */; };
+		719D0DD328AA8EB3005A2B4D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 719D0DD228AA8EB3005A2B4D /* SnapKit */; };
+		719D0DD628AAA847005A2B4D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 719D0DD528AAA847005A2B4D /* Alamofire */; };
+		719D0DD828AAA99B005A2B4D /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DD728AAA99B005A2B4D /* WordViewController.swift */; };
+		719D0DDB28AAACA1005A2B4D /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D0DDA28AAACA1005A2B4D /* WordViewModel.swift */; };
 		71A8117028AA60CF004A351D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8116F28AA60CF004A351D /* AppDelegate.swift */; };
 		71A8117228AA60CF004A351D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8117128AA60CF004A351D /* SceneDelegate.swift */; };
-		71A8117428AA60CF004A351D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8117328AA60CF004A351D /* ViewController.swift */; };
+		71A8117428AA60CF004A351D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8117328AA60CF004A351D /* HomeViewController.swift */; };
 		71A8117728AA60CF004A351D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A8117528AA60CF004A351D /* Main.storyboard */; };
 		71A8117928AA60D1004A351D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A8117828AA60D1004A351D /* Assets.xcassets */; };
 		71A8117C28AA60D1004A351D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A8117A28AA60D1004A351D /* LaunchScreen.storyboard */; };
@@ -22,10 +27,12 @@
 		719D0DC228AA7F37005A2B4D /* RandomWordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordService.swift; sourceTree = "<group>"; };
 		719D0DC828AA8556005A2B4D /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		719D0DCC28AA88F2005A2B4D /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
+		719D0DD728AAA99B005A2B4D /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		719D0DDA28AAACA1005A2B4D /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		71A8116C28AA60CF004A351D /* RandomWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A8116F28AA60CF004A351D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A8117128AA60CF004A351D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		71A8117328AA60CF004A351D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71A8117328AA60CF004A351D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		71A8117628AA60CF004A351D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71A8117828AA60D1004A351D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71A8117B28AA60D1004A351D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,25 +44,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719D0DD628AAA847005A2B4D /* Alamofire in Frameworks */,
+				719D0DD028AA8DA8005A2B4D /* Then in Frameworks */,
+				719D0DD328AA8EB3005A2B4D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		719D0DBE28AA7E91005A2B4D /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				71A8116F28AA60CF004A351D /* AppDelegate.swift */,
-				71A8117128AA60CF004A351D /* SceneDelegate.swift */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
 		719D0DC028AA7EA3005A2B4D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				71A8117328AA60CF004A351D /* ViewController.swift */,
+				71A8117328AA60CF004A351D /* HomeViewController.swift */,
+				719D0DD728AAA99B005A2B4D /* WordViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -72,6 +74,8 @@
 		719D0DCA28AA88BF005A2B4D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				719D0DD928AAAC86005A2B4D /* ViewModel */,
+				719D0DC128AA7EE5005A2B4D /* Network */,
 				719D0DCB28AA88D2005A2B4D /* Extension */,
 			);
 			path = Helper;
@@ -83,6 +87,14 @@
 				719D0DCC28AA88F2005A2B4D /* PublisherExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		719D0DD928AAAC86005A2B4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				719D0DDA28AAACA1005A2B4D /* WordViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		71A8116328AA60CF004A351D = {
@@ -106,10 +118,10 @@
 			children = (
 				71A8117528AA60CF004A351D /* Main.storyboard */,
 				71A8117A28AA60D1004A351D /* LaunchScreen.storyboard */,
-				719D0DBE28AA7E91005A2B4D /* Delegate */,
+				71A8116F28AA60CF004A351D /* AppDelegate.swift */,
+				71A8117128AA60CF004A351D /* SceneDelegate.swift */,
 				719D0DC028AA7EA3005A2B4D /* UI */,
 				719D0DCA28AA88BF005A2B4D /* Helper */,
-				719D0DC128AA7EE5005A2B4D /* Network */,
 				71A8117828AA60D1004A351D /* Assets.xcassets */,
 				71A8117D28AA60D1004A351D /* Info.plist */,
 			);
@@ -132,6 +144,11 @@
 			dependencies = (
 			);
 			name = RandomWords;
+			packageProductDependencies = (
+				719D0DCF28AA8DA8005A2B4D /* Then */,
+				719D0DD228AA8EB3005A2B4D /* SnapKit */,
+				719D0DD528AAA847005A2B4D /* Alamofire */,
+			);
 			productName = RandomWords;
 			productReference = 71A8116C28AA60CF004A351D /* RandomWords.app */;
 			productType = "com.apple.product-type.application";
@@ -160,6 +177,11 @@
 				Base,
 			);
 			mainGroup = 71A8116328AA60CF004A351D;
+			packageReferences = (
+				719D0DCE28AA8DA8005A2B4D /* XCRemoteSwiftPackageReference "Then" */,
+				719D0DD128AA8EB3005A2B4D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				719D0DD428AAA847005A2B4D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 71A8116D28AA60CF004A351D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,10 +210,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				719D0DC328AA7F37005A2B4D /* RandomWordService.swift in Sources */,
-				71A8117428AA60CF004A351D /* ViewController.swift in Sources */,
+				71A8117428AA60CF004A351D /* HomeViewController.swift in Sources */,
+				719D0DD828AAA99B005A2B4D /* WordViewController.swift in Sources */,
 				71A8117028AA60CF004A351D /* AppDelegate.swift in Sources */,
 				719D0DC928AA8556005A2B4D /* Resource.swift in Sources */,
 				719D0DCD28AA88F2005A2B4D /* PublisherExtension.swift in Sources */,
+				719D0DDB28AAACA1005A2B4D /* WordViewModel.swift in Sources */,
 				71A8117228AA60CF004A351D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +434,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		719D0DCE28AA8DA8005A2B4D /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		719D0DD128AA8EB3005A2B4D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		719D0DD428AAA847005A2B4D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		719D0DCF28AA8DA8005A2B4D /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719D0DCE28AA8DA8005A2B4D /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		719D0DD228AA8EB3005A2B4D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719D0DD128AA8EB3005A2B4D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		719D0DD528AAA847005A2B4D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719D0DD428AAA847005A2B4D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71A8116428AA60CF004A351D /* Project object */;
 }

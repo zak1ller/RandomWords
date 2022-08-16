@@ -8,7 +8,7 @@
 import Foundation
 
 struct Resource<T: Decodable> {
-  var base: String
+  var base: String = "https://random-word-api.herokuapp.com/"
   var path: String
   var params: [String: String]
   var header: [String: String]

@@ -15,10 +15,6 @@ enum NetworkError: Error {
 }
 
 final class NetworkService {
-  static let baseUrl = "https://random-word-api.herokuapp.com/"
-  static let allUrl = "https://random-word-api.herokuapp.com/all"
-  static let wordUrl = "https://random-word-api.herokuapp.com/word"
-  
   let session: URLSession
   
   init(configuration: URLSessionConfiguration) {
